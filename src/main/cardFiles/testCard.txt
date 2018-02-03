@@ -1,0 +1,12 @@
+#
+cat, cat.jpg
+mat, mat.jpg
+#
+bed, bed.jpg
+red, red.jpg
+#
+dog, dog.jpg
+frog, frog.jpg
+#
+cake, cake.jpg
+lake, lake.jpg
