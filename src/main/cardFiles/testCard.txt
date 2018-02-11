@@ -1,12 +1,12 @@
 #
-cat, cat.jpg
-mat, mat.jpg
+cat, cat.jpg, cat.wav
+mat, mat.jpg, cat.wav
 #
-bed, bed.jpg
-red, red.jpg
+bed, bed.jpg, cat.wav
+red, red.jpg, cat.wav
 #
-dog, dog.jpg
-frog, frog.jpg
+dog, dog.jpg, cat.wav
+frog, frog.jpg, cat.wav
 #
-cake, cake.jpg
-lake, lake.jpg
+cake, cake.jpg, cat.wav
+lake, lake.jpg, cat.wav
