@@ -19,8 +19,8 @@ public class GameCard {
         setOfWords = [];
     }
 
-    public static void importCard() throws IOException{
-        BufferedReader file = new BufferedReader(new FileReader("src/main/cardFiles/testCard.txt"));
+    public static GameCard importCard(File newFile) throws IOException{
+        BufferedReader file = new BufferedReader(new FileReader(newFile));
         String line;
         String nextLine;
         GameCard card = new GameCard();
@@ -36,7 +36,7 @@ public class GameCard {
                 i++;
                 line = file.readLine();
                 split = line.split(", ");
-                Word word = new Word(split[0], true, split[1]);
+                Word word = new Word(split[0], true, split[1], split[2]);
                 if (i == 1) {
                     rhyme1.addWord(word);
                 } else if (i == 2) {
@@ -49,7 +49,7 @@ public class GameCard {
 
             } else {
                 split = line.split(", ");
-                Word word = new Word(split[0], false, split[1]);
+                Word word = new Word(split[0], false, split[1], split[2]);
 
                 if (i == 1) {
                     rhyme1.addWord(word);
@@ -72,6 +72,8 @@ public class GameCard {
         card.addGroup(rhyme4);
 
         card.displayCard();
+    
+        return card;
     }
 
 
