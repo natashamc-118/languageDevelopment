@@ -4,6 +4,31 @@ import Database.GameCard
 
 class GameCardService {
 
+    public static void createCard(List<List<String>> gameCard) throws IOException{
+        //I need to create a new text file here
+        //The format of the text file will be # followed by one line for each word
+        //The first being the keyword, and at the next # we have moved on to the next
+        //keyword
+
+        //Takes in a list of tuples? A list of lists of tuples? Of form 
+        // [[(Word, Image, Audio)]] how do I put this as my input? 
+
+        //Have them record their audio through the webpage
+        File folder = new File("src/main/cardFiles");
+        String fileName = "card" + (folder.listFiles().length() + 1);
+        def file = new File(fileName);
+
+       /* gameCard.each{
+            //Each list in gameCard is a rhyming group
+            file.write("# /n");
+            //Each item in the inner list is a word
+            it.each{
+                file.write(it[0] + ", " + it[1] + ", " + it[2] + "/n");
+
+            }
+        }*/
+    }
+
     public static void importCard() throws IOException{
         BufferedReader file = new BufferedReader(new FileReader("src/main/cardFiles/testCard.txt"));
         String line;

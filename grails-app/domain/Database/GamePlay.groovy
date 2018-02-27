@@ -35,7 +35,7 @@ class GamePlay{
             x++;
         }
 
-        return wordList;
+        return listWords;
 
     }
 
