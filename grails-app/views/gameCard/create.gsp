@@ -48,10 +48,7 @@
         </div>
       </div>
 
-      <!-- keyWordField (Text Field) -->
-      <div id="u3" class="ax_default text_field" data-label="keyWordField">
-        <input id="u3_input" type="text" value="" readonly/>
-      </div>
+
 
       <!-- Unnamed (Rectangle) -->
       <div id="u4" class="ax_default heading_2">
@@ -60,6 +57,65 @@
           <p><span>The Above Word Rhymes With:</span></p>
         </div>
       </div>
+
+      <g:form url="[controller:'gameCard', action:'collect']">
+        <!-- keyWordField -->
+        <g:hiddenField name="startNum" value="${startNum}"/>
+        <div id="u3" class="ax_default text_field" data-label="keyWordField">
+          <g:textField name="keyWord"/>
+        </div>
+
+        <div id="u11" class="ax_default text_field" data-label="keyImage">
+          <input id="keyImage" type="file" value=""/>
+        </div>
+
+        <!-- rhyme1Field -->
+        <div id="u7" class="ax_default text_field" data-label="rhyme1Field">
+          <g:textField name="rhyme1"/>
+        </div>
+
+        <div id="u13" class="ax_default text_field" data-label="rhyme1Image">
+          <input id="rhyme1Image" type="file" value=""/>
+        </div>
+
+        <!-- rhyme2Field -->
+        <div id="u8" class="ax_default text_field" data-label="rhyme2">
+          <g:textField name="rhyme2"/>
+        </div>        
+
+        <div id="u15" class="ax_default text_field" data-label="rhyme2Image">
+          <input id="rhyme2Image" type="file" value=""/>
+        </div>
+
+        <!-- rhyme3Field -->
+        <div id="u17" class="ax_default text_field" data-label="rhyme3">
+          <g:textField name="rhyme3"/>
+        </div>
+
+        <div id="u19" class="ax_default text_field" data-label="rhyme3Image">
+          <input id="rhyme3Image" type="file" value=""/>
+        </div>
+
+        <!-- rhyme4 (Text Field) -->
+        <div id="u21" class="ax_default text_field" data-label="rhyme4">
+          <g:textField name="rhyme4"/>
+        </div>
+
+        <div id="u23" class="ax_default text_field" data-label="rhyme4Image">
+          <input id="rhyme4Image" type="file" value=""/>
+        </div>
+
+        <!-- nextButton (Rectangle) -->
+        <div id="u9" class="ax_default primary_button" data-label="nextButton">
+          <div id="u9_div" class=""></div>
+          <div id="u9_text" class="text ">
+            <p><span><g:submitButton name="next" value="NEXT"/></span></p>
+          </div>
+        </div>
+            
+        </div>     
+
+      </g:form>
 
       <!-- rhyme1 (Rectangle) -->
       <div id="u5" class="ax_default label" data-label="rhyme1">
@@ -77,35 +133,12 @@
         </div>
       </div>
 
-      <!-- rhyme1Field (Text Field) -->
-      <div id="u7" class="ax_default text_field" data-label="rhyme1Field">
-        <input id="u7_input" type="text" value=""/>
-      </div>
-
-      <!-- rhyme2 (Text Field) -->
-      <div id="u8" class="ax_default text_field" data-label="rhyme2">
-        <input id="u8_input" type="text" value=""/>
-      </div>
-
-      <!-- nextButton (Rectangle) -->
-      <div id="u9" class="ax_default primary_button" data-label="nextButton">
-        <div id="u9_div" class=""></div>
-        <div id="u9_text" class="text ">
-          <p><span>NEXT</span></p>
-        </div>
-      </div>
-
       <!-- image (Rectangle) -->
       <div id="u10" class="ax_default label" data-label="image">
         <div id="u10_div" class=""></div>
         <div id="u10_text" class="text ">
           <p><span>Image</span></p>
         </div>
-      </div>
-
-      <!-- keyImage (Text Field) -->
-      <div id="u11" class="ax_default text_field" data-label="keyImage">
-        <input id="u11_input" type="file" value=""/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
@@ -116,22 +149,12 @@
         </div>
       </div>
 
-      <!-- rhyme1Image (Text Field) -->
-      <div id="u13" class="ax_default text_field" data-label="rhyme1Image">
-        <input id="u13_input" type="file" value=""/>
-      </div>
-
       <!-- Unnamed (Rectangle) -->
       <div id="u14" class="ax_default label">
         <div id="u14_div" class=""></div>
         <div id="u14_text" class="text ">
           <p><span>Image</span></p>
         </div>
-      </div>
-
-      <!-- rhyme2Image (Text Field) -->
-      <div id="u15" class="ax_default text_field" data-label="rhyme2Image">
-        <input id="u15_input" type="file" value=""/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
@@ -142,22 +165,12 @@
         </div>
       </div>
 
-      <!-- rhyme3 (Text Field) -->
-      <div id="u17" class="ax_default text_field" data-label="rhyme3">
-        <input id="u17_input" type="text" value=""/>
-      </div>
-
       <!-- Unnamed (Rectangle) -->
       <div id="u18" class="ax_default label">
         <div id="u18_div" class=""></div>
         <div id="u18_text" class="text ">
           <p><span>Image</span></p>
         </div>
-      </div>
-
-      <!-- rhyme3Image (Text Field) -->
-      <div id="u19" class="ax_default text_field" data-label="rhyme3Image">
-        <input id="u19_input" type="file" value=""/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
@@ -168,22 +181,12 @@
         </div>
       </div>
 
-      <!-- rhyme4 (Text Field) -->
-      <div id="u21" class="ax_default text_field" data-label="rhyme4">
-        <input id="u21_input" type="text" value=""/>
-      </div>
-
       <!-- Unnamed (Rectangle) -->
       <div id="u22" class="ax_default label">
         <div id="u22_div" class=""></div>
         <div id="u22_text" class="text ">
           <p><span>Image</span></p>
         </div>
-      </div>
-
-      <!-- rhyme4Image (Text Field) -->
-      <div id="u23" class="ax_default text_field" data-label="rhyme4Image">
-        <input id="u23_input" type="file" value=""/>
       </div>
 
       <!-- Unnamed (Horizontal Line) -->
@@ -205,7 +208,7 @@
       <div id="u27" class="ax_default heading_2">
         <div id="u27_div" class=""></div>
         <div id="u27_text" class="text ">
-          <p><span>Keyword #1</span></p>
+          <p><span>Keyword #${startNum}</span></p>
         </div>
       </div>
     </div>

@@ -26,7 +26,7 @@
                 <h2>Options</h2>
                 <ul>
                         <li class="controller">
-                            <g:link action="create">Add New Game Card</g:link>
+                            <g:link action="fileCreate">Add New Game Card</g:link>
                         </li>
                 </ul>
             </div>
