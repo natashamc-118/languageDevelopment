@@ -32,6 +32,7 @@ public class GameCard {
 
         int i = 0;
         while((line = file.readLine()) != null) {
+            
             if (line.contains("#")) {
                 i++;
                 line = file.readLine();
