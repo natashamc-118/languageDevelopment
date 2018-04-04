@@ -60,6 +60,8 @@
                 this application, click on each to execute its default action:
             </p>
 
+            <g:link controller="gameCard">Teacher Settings</g:link>
+
             <div id="controllers" role="navigation">
                 <h2>Available Controllers:</h2>
                 <ul>

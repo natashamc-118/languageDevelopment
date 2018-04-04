@@ -1,10 +1,3 @@
-/*package languagedevelopment
-
-class WordController {
-
-    def index() { }
-}*/
-
 package languagedevelopment
 import Database.GameCard
 import Database.*;
