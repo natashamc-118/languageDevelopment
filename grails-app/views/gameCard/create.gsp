@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+
     <title>describeCard</title>
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta name="apple-mobile-web-app-capable" content="yes"/>
@@ -17,7 +19,7 @@
     <asset:javascript src="data/document.js"/>
     <asset:javascript src="resources/scripts/prototypePost.js"/>
     <asset:javascript src="files/describecard/data.js"/>
-   
+  
     <script type="text/javascript">
       $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
       $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
@@ -362,9 +364,9 @@
           </div>                       
         </g:if>
 
-          
         </div>
       </div>
     </div>
   </body>
 </html>
+

@@ -1,0 +1,22 @@
+#
+CAT, CAT.jpg, CAT.wav
+HAT, HAT.jpg, HAT.wav
+BAT, BAT.jpg, BAT.wav
+RAT, RAT.jpg, RAT.wav
+MAT, MAT.jpg, MAT.wav
+#
+RED, RED.jpg, RED.wav
+BED, BED.jpg, BED.wav
+HEAD, HEAD.jpg, HEAD.wav
+SLED, SLED.jpg, SLED.wav
+BREAD, BREAD.jpg, BREAD.wav
+#
+DOG, DOG.jpg, DOG.wav
+FROG, FROG.jpg, FROG.wav
+LOG, LOG.jpg, LOG.wav
+#
+CAKE, CAKE.jpg, CAKE.wav
+LAKE, LAKE.jpg, LAKE.wav
+STEAK, STEAK.jpg, STEAK.wav
+SNAKE, SNAKE.jpg, SNAKE.wav
+RAKE, RAKE.jpg, RAKE.wav

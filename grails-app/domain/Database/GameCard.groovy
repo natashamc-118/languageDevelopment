@@ -1,7 +1,10 @@
 package Database
 
+import java.sql.DatabaseMetaData
+
 public class GameCard {
     def setOfWords = [] as RhymingGroup[];
+    //RhymingGroup.save(flush: true);
 
     void addGroup(RhymingGroup group){
         setOfWords.add(group);
@@ -17,6 +20,10 @@ public class GameCard {
 
     public GameCard(){
         setOfWords = [];
+       // Database.GameCard.save(setOfWords);
+       // setOfWords.save(true);
+      //  Database.GameCard.save(flush: true, cascade: true);
+
     }
 
     public static GameCard importCard(File newFile) throws IOException{
@@ -47,6 +54,10 @@ public class GameCard {
                 } else {
                     rhyme4.addWord(word);
                 }
+             //   word.save(flush: true);
+                word.withTransaction{
+                    word.save()
+                }
 
             } else {
                 split = line.split(", ");
@@ -61,7 +72,10 @@ public class GameCard {
                 } else {
                     rhyme4.addWord(word);
                 }
-
+              //  word.save(flush: true);
+                word.withTransaction{
+                    word.save()
+                }
             }
 
         }
@@ -72,8 +86,25 @@ public class GameCard {
         card.addGroup(rhyme3);
         card.addGroup(rhyme4);
 
-        card.displayCard();
-    
+        //card.displayCard();
+        rhyme1.withTransaction{
+            rhyme1.save()
+        }
+        rhyme2.withTransaction{
+            rhyme2.save()
+        }
+        rhyme3.withTransaction{
+            rhyme3.save()
+        }
+        rhyme4.withTransaction{
+            rhyme4.save()
+        }
+        /*rhyme1.save(flush: true);
+        rhyme2.save(flush: true);
+        rhyme3.save(flush: true);
+        rhyme4.save(flush: true);*/
+//        card.save(flush: true);
+
         return card;
     }
 
