@@ -44,6 +44,7 @@ class GamePlayController {
         filenumber = GamePlay.chooseFile();
 
         while (!(filenumber.getName().contains("card"))){
+            System.out.println()
             filenumber = GamePlay.chooseFile();
         }
 
@@ -80,6 +81,11 @@ class GamePlayController {
         // extract the card number and display the card images
         filenumber = GamePlay.chooseFile();
 
+        while (!(filenumber.getName().contains("card"))){
+            System.out.println()
+            filenumber = GamePlay.chooseFile();
+        }
+
         System.out.println("Filenumber: " + filenumber);
 
         playCard = GamePlay.generateCard(filenumber);
@@ -111,6 +117,12 @@ class GamePlayController {
         // a second instructions page to allow for a different card to be chosen upon instructions page
         // initially sent to instructions page then is sent to identical instructions page with a differently selected card
         filenumber = GamePlay.chooseFile();
+
+
+        while (!(filenumber.getName().contains("card"))){
+            System.out.println()
+            filenumber = GamePlay.chooseFile();
+        }
         System.out.println("Filenumber: " + filenumber);
 
         playCard = GamePlay.generateCard(filenumber);
