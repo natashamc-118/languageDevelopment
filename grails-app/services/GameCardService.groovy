@@ -5,7 +5,7 @@ import Database.GameCard
 class GameCardService {
 
     public static void importCard() throws IOException{
-        BufferedReader file = new BufferedReader(new FileReader("src/main/cardFiles/testCard.txt"));
+        BufferedReader file = new BufferedReader(new FileReader("src/main/cardFiles/card1.txt"));
         String line;
         String nextLine;
         GameCard card = new GameCard();
@@ -59,3 +59,5 @@ class GameCardService {
         card.displayCard();
     }
 }
+
+

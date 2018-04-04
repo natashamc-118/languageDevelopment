@@ -2,7 +2,6 @@ package Database
 
 class Word {
 
-    //static hasOne = [rhymingGroup : RhymingGroup];
 
     String name;
     Boolean hasButton;
@@ -19,23 +18,19 @@ class Word {
 
     void display(){
         println(name);
-        println(image);
-        println(audio);
     }
 
-    /*String name;
-    Boolean hasButton;
-    File image;
-   
-    public Word(String title, Boolean keyWord, String fileName){
-        name = title;
-        hasButton = keyWord;
-        image = new File(fileName);
+    public getName(){
+        return name;
     }
-
-    void display(){
-        println(name);
-        println(image);
-    }*/
+    public getKey(){
+        return hasButton;
+    }
+    public getImage(){
+        return image;
+    }
+    public getAudio(){
+        return audio;
+    }
 
 }

@@ -42,6 +42,7 @@
 
     <div id="spinner" class="spinner" style="display:none;">
         <g:message code="spinner.alt" default="Loading&hellip;"/>
+        <g:link controller="gamePlay">Teacher Settings</g:link>
     </div>
 
     <asset:javascript src="application.js"/>

@@ -1,0 +1,22 @@
+#
+STAR, STAR.jpg, STAR.wav
+CAR, CAR.jpg, CAR.wav
+JAR, JAR.jpg, JAR.wav
+GUITAR, GUITAR.jpg, GUITAR.wav
+#
+BOW, BOW.jpg, BOW.wav
+SNOW, SNOW.jpg, SNOW.wav
+TOE, TOE.jpg, TOE.wav
+CROW, CROW.jpg, CROW.wav
+#
+BEAR, BEAR.jpg, BEAR.wav
+CHAIR, CHAIR.jpg, CHAIR.wav
+HAIR, HAIR.jpg, HAIR.wav
+PEAR, PEAR.jpg, PEAR.wav
+FAIR, FAIR.jpg, FAIR.wav
+SQUARE, SQUARE.jpg, SQUARE.wav
+#
+DUCK, DUCK.jpg, DUCK.wav
+TRUCK, TRUCK.jpg, TRUCK.wav
+LUCK, LUCK.jpg, LUCK.wav
+PUCK, PUCK.jpg, PUCK.wav
