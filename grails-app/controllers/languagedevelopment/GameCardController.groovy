@@ -15,6 +15,7 @@ class GameCardController {
     	//card.display();
     	//GameCard.importCard();
     	//correctkey = blah;
+        //need a function to remove files that are not complete.
 
         //call function to gather data
 
@@ -80,7 +81,12 @@ class GameCardController {
     }
 
     def success() {
-        println "View has been called"
+        def cardName = "card" + params.cardNum + ".txt";
+        def images = gameCardService.keyImages(cardName);
+        println images;
+
+        model:[images:images, cardNum:params.cardNum]
+        //println "View has been called"
     }
 
     def collect(){
@@ -166,21 +172,15 @@ class GameCardController {
         gameCardService.addToCard(params)
 
         println rhymingGroup
-        if(params.startNum != '1'){
-            //startNum = startNum + params.startNum.toInteger()
-        }
-        else{
-
-        }
-
-        def startNum = params.startNum.toInteger() + 1;
+        
+        def startNum = params.startNum.toInteger() + 1;        
 
         if(startNum != 5){
             render(view:"collect", model:[startNum: startNum, cardNum: params.cardNum])    
         }
         //The form has been filled out 4 times.
         else{
-            render(view:"success")
+            redirect(action:"success", params:[cardNum: params.cardNum])
         }
         //int startNum = params.startNum.toInteger() + 1
         

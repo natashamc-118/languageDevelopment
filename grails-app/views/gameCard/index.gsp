@@ -45,6 +45,7 @@
         <div id="u107_div" class=""></div>
         <div id="u107_text" class="text ">
           <p><span>Existing Cards:</span></p>
+          <br></br>
         </div>
       </div>      
 
@@ -63,7 +64,6 @@
                 <td style="border:solid 1px black;">${card[0]}</td>
                 <td padding="2" align="left" style="border:solid 1px black;">${card[1]}</td>
                 <td style="border:solid 1px black;">
-                    <g:link action="edit"><input type="button" value="Edit"/></g:link>
                     <g:link action="delete" params="[num: "${card[0]}"]"><input type="button" style="color:red" value="Delete" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');"/>
                     </g:link>
                 </td>
@@ -83,7 +83,16 @@
               <p><span>Add New Card</span></p>
             </div>
         </div>
-      </g:link>
+      </g:link>  
+
+      <g:link action="fileCreate">
+        <div id="u110" class="ax_default link_button">
+          <div id="u110_div" class=""></div>
+          <div id="u110_text" class="text ">
+            <p><span>Click to Return to Game</span></p>
+          </div>
+        </div>   
+      </g:link>       
 
     </div>
   </body>

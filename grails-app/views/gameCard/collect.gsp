@@ -51,6 +51,7 @@
       <g:form url="[controller:'gameCard', action:'collect']" method="POST" enctype="multipart/form-data">
       <g:hiddenField name="startNum" value="${startNum}"/>
       <g:hiddenField name="cardNum" value="${cardNum}"/>
+      <g:hiddenField name="params" value="${params}"/>
 
       <!-- keyWordField (Text Field) -->
       <div id="u8" class="ax_default text_field" data-label="keyWordField">
@@ -209,10 +210,7 @@
       </div>
       <!-- nextButton (Rectangle) -->
       <div id="u14" class="ax_default primary_button" data-label="nextButton">
-        <div id="u14_div" class=""></div>
-        <div id="u14_text" class="text ">
-          <p><span><g:submitButton name="next" value="NEXT"/></span></p>
-        </div>
+        <p><span><g:submitButton name="next" value="NEXT"/></span></p>
       </div>
 
     </g:form>

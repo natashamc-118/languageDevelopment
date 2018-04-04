@@ -147,11 +147,7 @@
 
         <!-- nextButton (Rectangle) -->
         <div id="u60" class="ax_default primary_button" data-label="nextButton">
-          <div id="u60_div" class=""></div>
-          <div id="u60_text" class="text ">
-            <p><span>NEXT</span></p>
-            <g:submitButton name="next" value="NEXT"/>
-          </div>
+          <g:submitButton name="next" value="NEXT"/>
         </div>
         
       </g:form>

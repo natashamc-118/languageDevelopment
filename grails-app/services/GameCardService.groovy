@@ -8,13 +8,21 @@ class GameCardService {
     public List<String> existingCards(){
         String temp;
         def list = []
+        def tempWords;
         File folder = new File("src/main/cardFiles");
         folder.listFiles().each{
             if(it.getName() != ".DS_Store"){
                 temp = it.getName();
                 temp = temp - "card";
                 temp = temp - ".txt";
-                list.add((temp + keyWords(it)));
+                tempWords = keyWords(it);
+                if(tempWords != "delete"){
+                    list.add(temp + tempWords);
+                }
+                else{
+                    println new File("src/main/cardFiles/" + it.getName()).delete();
+                }
+                //list.add((temp + (keyWords(it) != "delete"));
             }
         }
         println "This is list " +  list;
@@ -33,9 +41,11 @@ class GameCardService {
         String nextLine;
         String[] split;
         def keyWords = "";
+        def count = 0; //if this number is not 4 then delete the file
 
         while((line = file.readLine()) != null){
             if(line.contains("#")){
+                count++;
                 line = file.readLine();
                 split = line.split(", ");
                 keyWords = keyWords + ", " + (split[0]);
@@ -44,7 +54,14 @@ class GameCardService {
 
         file.close();
         println keyWords;
-        return keyWords;
+
+        if(count == 4){
+            return keyWords;
+        }
+        else{
+            return "delete";
+        }
+        //return keyWords;
     }
 
     public String saveImage(File picture, String name){
@@ -194,6 +211,29 @@ class GameCardService {
         }
 
         file.close()
+
+    }
+
+    public List<String> keyCollect(Integer keyNum){
+
+    }
+
+    public List<String> keyImages(String card){
+        BufferedReader file = new BufferedReader(new FileReader("src/main/cardFiles/" + card));
+        String line;
+        String nextLine;
+        String[] split;
+        def images = [];
+
+        while((line = file.readLine()) != null){
+            if(line.contains("#")){
+                line = file.readLine();
+                split = line.split(", ");
+                images.add(split[1])
+            }
+        }
+        println images;
+        return images
 
     }
 
