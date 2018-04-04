@@ -42,6 +42,11 @@ class GamePlayController {
     def index() {
 
         filenumber = GamePlay.chooseFile();
+
+        while (!(filenumber.getName().contains("card"))){
+            filenumber = GamePlay.chooseFile();
+        }
+
         System.out.println("Filenumber: " + filenumber);
 
         playCard = GamePlay.generateCard(filenumber);
@@ -74,6 +79,7 @@ class GamePlayController {
         // choose a file at random to play the game with
         // extract the card number and display the card images
         filenumber = GamePlay.chooseFile();
+
         System.out.println("Filenumber: " + filenumber);
 
         playCard = GamePlay.generateCard(filenumber);
