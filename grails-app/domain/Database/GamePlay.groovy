@@ -2,53 +2,125 @@ package Database
 
 import java.util.Collections;
 import java.util.Random;
+import Database.RhymingGroup
+import Database.Word
 
-//import cardFiles
 
-class GamePlay{
+class GamePlay {
 
-    public static GameCard chooseCard() throws IOException{
+    public static File chooseFile() throws IOException {
 
         File folder = new File("src/main/cardFiles");
-        
+
         File[] files = folder.listFiles();
 
         Random rand = new Random();
 
         File file = files[rand.nextInt(files.length)];
 
-        println file;
+        // retrieves the card number for the player to be able to find correct card without searching for pictures
+        String cardNumber = file.getName();
+        cardNumber = cardNumber.substring(0, cardNumber.length() - 4);
 
-        GameCard newcard = GameCard.importCard(file);
-        
-        return newcard;
+        // returns the file chosen to play with
+        return file;
     }
 
-    public static List listWords(GameCard newCard) throws IOException{
+    public static String cardNum(File file) throws IOException {
+        // obtains the card number by removing the beginning and end of the file path
+        String cardNumber = file;
+        cardNumber = cardNumber.substring(0, cardNumber.length() - 4);
+        cardNumber = cardNumber.substring(23, cardNumber.length());
+        System.out.println("CARD: " + cardNumber);
+        // returns card number
+        return cardNumber;
+    }
 
+
+    public static GameCard generateCard(File file) throws IOException {
+
+        GameCard newCard = GameCard.importCard(file);
+
+        System.out.println("CARD : ");
+        newCard.displayCard();
+
+        newCard.save(flush: true);
+
+        return newCard;
+    }
+
+
+    public static List listWords(GameCard newCard) throws IOException {
+        System.out.println(" ");
         List listWords = new ArrayList();
 
-        int x = 0;
-        while(x <= 3){
-            listWords.add("whatever");
-            System.out.println("Value of x:" + x);
-            x++;
+        int i=0;
+        for (RhymingGroup group : newCard.setOfWords) {
+
+            for(Word word : group.setOfRhymes){
+
+                String title = word.getName();
+                Boolean key = word.getKey();
+                File image = word.getImage();
+                File audio = word.getAudio();
+
+                // creates a list with the rhyming words
+                if(key==false){
+                    listWords.add(title);
+                }
+            }
         }
 
-        return listWords;
+        //randomizes list
+        long seed = System.nanoTime();
+        Collections.shuffle(listWords, new Random(seed));
 
+        //returns list to play game with
+        return listWords;
     }
 
-    
+    public static List listKeys(GameCard newCard) throws IOException {
+        List listKeys = new ArrayList();
+        int i=0;
+        for (RhymingGroup group : newCard.setOfWords) {
+            for (Word word : group.setOfRhymes) {
+                String title = word.getName();
+                Boolean key = word.getKey();
+                File image = word.getImage();
+                File audio = word.getAudio();
+
+                // creates list of key words
+                if (key == true) {
+                    listKeys.add(title)
+                }
+            }
+        }
+        return listKeys;
+    }
+
+    public static List listGroups(GameCard newCard) throws IOException {
+        List listGroups = new ArrayList();
+
+        int i=0;
+        for (RhymingGroup group : newCard.setOfWords) {
+
+            List grouping = new ArrayList();
+
+
+            for (Word word : group.setOfRhymes) {
+                String title = word.getName();
+                Boolean key = word.getKey();
+                File image = word.getImage();
+                File audio = word.getAudio();
+
+                grouping.add(title);
+
+            }
+            listGroups.add(grouping);
+        }
+        return listGroups;
+    }
+
 }
 
 
-/*
-choosecard funciton
-- choose randome file
-- from file take all rhyming words and make random list
-- then go down the list one by one playing the game
-- given the rhyming word on the screen
-    - if key hit corresponds to keyword of rhyming word = correct
-    - otherwise = incorrect
- */

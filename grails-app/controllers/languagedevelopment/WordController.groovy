@@ -5,12 +5,12 @@ import Database.*;
 class WordController {
 
     def index() {
-    	//GameCard.importCard();
-    	GamePlay.getCard();
-    	//card.display();
-    	//GameCard.importCard();
-    	//correctkey = blah;
-    	println "HELLO"
+        //GameCard.importCard();
+        GamePlay.getCard();
+        //card.display();
+        //GameCard.importCard();
+        //correctkey = blah;
+        println "HELLO"
 
 
     }

@@ -3,6 +3,7 @@ package Database
 class RhymingGroup {
     def setOfRhymes = [] as Word[];
 
+
     void addWord(Word word){
         if(setOfRhymes){
             setOfRhymes.add(word);
@@ -10,7 +11,6 @@ class RhymingGroup {
         else{
             setOfRhymes = [word];
         }
-
     }
 
     void removeWord(Word word){
