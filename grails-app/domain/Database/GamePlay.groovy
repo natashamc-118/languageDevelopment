@@ -106,6 +106,7 @@ class GamePlay {
 
             List grouping = new ArrayList();
 
+
             for (Word word : group.setOfRhymes) {
                 String title = word.getName();
                 Boolean key = word.getKey();
