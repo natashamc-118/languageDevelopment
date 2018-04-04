@@ -65,6 +65,7 @@ class GamePlay {
                 // creates a list with the rhyming words
                 if(key==false){
                     listWords.add(title);
+//                    listWords.add(word);
                 }
             }
         }
@@ -76,6 +77,27 @@ class GamePlay {
         //returns list to play game with
         return listWords;
     }
+
+    public static String imageLocation(GameCard newCard, String screenWord) throws IOException{
+        int i=0;
+        String imageEx;
+        for (RhymingGroup group : newCard.setOfWords) {
+
+            for(Word word : group.setOfRhymes){
+
+                String title = word.getName();
+                Boolean key = word.getKey();
+//                String image = word.getImage();
+                // creates a list with the rhyming words
+                if(title==screenWord){
+                    imageEx = word.getImage();
+                }
+            }
+        }
+        return imageEx;
+    }
+
+
 
     public static List listKeys(GameCard newCard) throws IOException {
         List listKeys = new ArrayList();

@@ -153,7 +153,11 @@ class GamePlayController {
         wordGroups = GamePlay.listGroups(playCard);
 
         word =  wordList.get(correctVal);
+
+        String imageEx = GamePlay.imageLocation(playCard, word);
         request.setAttribute("rhymeWord", word);
+        request.setAttribute("imageLoc", imageEx);
+        System.out.println("IMAGE LOCATION                  "+imageEx);
 
     }
 

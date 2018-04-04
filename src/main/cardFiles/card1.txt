@@ -9,7 +9,7 @@ RED, RED.jpg, RED.wav
 BED, BED.jpg, BED.wav
 HEAD, HEAD.jpg, HEAD.wav
 SLED, SLED.jpg, SLED.wav
-BREAD, BREAD.jpg, BREAD.wav
+BREAD, BREAD.png, BREAD.wav
 #
 DOG, DOG.jpg, DOG.wav
 FROG, FROG.jpg, FROG.wav

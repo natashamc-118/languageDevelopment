@@ -83,7 +83,9 @@
       <div id="u1027" class="ax_default image">
         <!--img id="u1027_img" class="img " src="/gamePlay/images/game_screen/u1027.jpg"/-->
         <!--img id="u1027_img" class ="img" src="http://localhost:8080/gamePlay/images/game_screen/u1027.jpg"/-->
-        <asset:image id="u1027_img" class = "img"  src="${rhymeWord}.jpg"/>
+        <!--asset:image id="u1027_img" class = "img" src="${rhymeWord}.jpg"/-->
+        <asset:image id="u1027_img" class = "img" src="${imageLoc}"/>
+
     </div>
     </div>
 
