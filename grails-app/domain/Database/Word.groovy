@@ -15,7 +15,6 @@ class Word {
     void display(){
         println(name);
         println(image);
-
     }
 
     public getName(){
@@ -27,8 +26,6 @@ class Word {
     public getImage(){
         return image;
     }
-    public getAudio(){
-        return audio;
-    }
+
 
 }

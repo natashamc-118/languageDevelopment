@@ -61,9 +61,7 @@ class GamePlay {
 
                 String title = word.getName();
                 Boolean key = word.getKey();
-                File image = word.getImage();
-                File audio = word.getAudio();
-
+//                String image = word.getImage();
                 // creates a list with the rhyming words
                 if(key==false){
                     listWords.add(title);
@@ -86,8 +84,7 @@ class GamePlay {
             for (Word word : group.setOfRhymes) {
                 String title = word.getName();
                 Boolean key = word.getKey();
-                File image = word.getImage();
-                File audio = word.getAudio();
+//                String image = word.getImage();
 
                 // creates list of key words
                 if (key == true) {
@@ -109,9 +106,8 @@ class GamePlay {
 
             for (Word word : group.setOfRhymes) {
                 String title = word.getName();
-                Boolean key = word.getKey();
-                File image = word.getImage();
-                File audio = word.getAudio();
+//                Boolean key = word.getKey();
+//                Sting image = word.getImage();
 
                 grouping.add(title);
 

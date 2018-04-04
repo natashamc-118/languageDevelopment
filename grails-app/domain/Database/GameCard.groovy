@@ -44,7 +44,7 @@ public class GameCard {
                 i++;
                 line = file.readLine();
                 split = line.split(", ");
-                Word word = new Word(split[0], true, split[1], split[2]);
+                Word word = new Word(split[0], true, split[1]);
                 if (i == 1) {
                     rhyme1.addWord(word);
                 } else if (i == 2) {
@@ -61,7 +61,7 @@ public class GameCard {
 
             } else {
                 split = line.split(", ");
-                Word word = new Word(split[0], false, split[1], split[2]);
+                Word word = new Word(split[0], false, split[1]);
 
                 if (i == 1) {
                     rhyme1.addWord(word);
