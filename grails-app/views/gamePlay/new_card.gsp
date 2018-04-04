@@ -132,26 +132,26 @@
       <!-- Unnamed (Image) -->
       <div id="u1072" class="ax_default image">
         <!--img id="u1072_img" class="img " src="images/instructions/u20.jpg"/-->
-        <asset:image id="u1072_img" class = "img"  src="${rhymeWord1}.jpg"/>
+        <asset:image id="u1072_img" class = "img"  src="${imageWord1}"/>
       </div>
 
       <!-- Unnamed (Image) -->
       <div id="u1073" class="ax_default image">
         <!--img id="u1073_img" class="img " src="images/instructions/u19.jpg"/-->
-        <asset:image id="u1073_img" class = "img"  src="${rhymeWord2}.jpg"/>
+        <asset:image id="u1073_img" class = "img"  src="${imageWord2}"/>
       </div>
 
       <!-- Unnamed (Image) -->
       <div id="u1074" class="ax_default image">
         <!--img id="u1074_img" class="img " src="images/instructions/u18.jpg"/-->
-        <asset:image id="u1074_img" class = "img"  src="${rhymeWord3}.jpg"/>
+        <asset:image id="u1074_img" class = "img"  src="${imageWord3}"/>
       </div>
 
 
       <!-- Unnamed (Image) -->
       <div id="u1075" class="ax_default image">
         <!--img id="u1075_img" class="img " src="images/instructions/u17.jpg"/-->
-        <asset:image id="u1075_img" class = "img"  src="${rhymeWord4}.jpg"/>
+        <asset:image id="u1075_img" class = "img"  src="${imageWord4}"/>
       </div>
     </div>
 

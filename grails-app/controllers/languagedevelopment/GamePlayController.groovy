@@ -23,6 +23,13 @@ class GamePlayController {
     private List keyList;
     private List wordGroups;
 
+    private String imageEx;
+    private String imageEx1;
+    private String imageEx2;
+    private String imageEx3;
+    private String imageEx4;
+    private String imageExKey;
+
     // what word each key corresponds to
     private String key1;
     private String key2;
@@ -102,10 +109,23 @@ class GamePlayController {
 
         // each key word corresponds to a key being pressed
         keyList = GamePlay.listKeys(playCard);
+
+        imageEx1 = GamePlay.imageLocation(playCard, keyList.get(0));
+        imageEx2 = GamePlay.imageLocation(playCard, keyList.get(1));
+        imageEx3 = GamePlay.imageLocation(playCard, keyList.get(2));
+        imageEx4 = GamePlay.imageLocation(playCard, keyList.get(3));
+
+
         request.setAttribute("rhymeWord1", keyList.get(0));
         request.setAttribute("rhymeWord2", keyList.get(1));
         request.setAttribute("rhymeWord3", keyList.get(2));
         request.setAttribute("rhymeWord4", keyList.get(3));
+
+        request.setAttribute("imageWord1", imageEx1);
+        request.setAttribute("imageWord2", imageEx2);
+        request.setAttribute("imageWord3", imageEx3);
+        request.setAttribute("imageWord4", imageEx4);
+
 
         cardNumber = GamePlay.cardNum(filenumber);
         request.setAttribute("cardNumber", cardNumber);
@@ -136,11 +156,24 @@ class GamePlayController {
             }
         }
 
+        // each key word corresponds to a key being pressed
         keyList = GamePlay.listKeys(playCard);
+
+        imageEx1 = GamePlay.imageLocation(playCard, keyList.get(0));
+        imageEx2 = GamePlay.imageLocation(playCard, keyList.get(1));
+        imageEx3 = GamePlay.imageLocation(playCard, keyList.get(2));
+        imageEx4 = GamePlay.imageLocation(playCard, keyList.get(3));
+
+
         request.setAttribute("rhymeWord1", keyList.get(0));
         request.setAttribute("rhymeWord2", keyList.get(1));
         request.setAttribute("rhymeWord3", keyList.get(2));
         request.setAttribute("rhymeWord4", keyList.get(3));
+
+        request.setAttribute("imageWord1", imageEx1);
+        request.setAttribute("imageWord2", imageEx2);
+        request.setAttribute("imageWord3", imageEx3);
+        request.setAttribute("imageWord4", imageEx4);
 
         cardNumber = GamePlay.cardNum(filenumber);
         request.setAttribute("cardNumber", cardNumber);
@@ -154,7 +187,7 @@ class GamePlayController {
 
         word =  wordList.get(correctVal);
 
-        String imageEx = GamePlay.imageLocation(playCard, word);
+        imageEx = GamePlay.imageLocation(playCard, word);
         request.setAttribute("rhymeWord", word);
         request.setAttribute("imageLoc", imageEx);
         System.out.println("IMAGE LOCATION                  "+imageEx);
@@ -168,8 +201,12 @@ class GamePlayController {
         key1 = keyList.get(0);
 
         request.setAttribute("pressedLeft", key1);
+        imageExKey = GamePlay.imageLocation(playCard, key1);
+        request.setAttribute("imageLocKey", imageExKey);
 
         request.setAttribute("rhymeWord", word);
+        imageEx = GamePlay.imageLocation(playCard, word);
+        request.setAttribute("imageLoc", imageEx);
 
         request.setAttribute("screenWord", word);
         thumb = "incorrect";
@@ -197,8 +234,12 @@ class GamePlayController {
         key2 = keyList.get(1);
 
         request.setAttribute("pressedUp", key2);
+        imageExKey = GamePlay.imageLocation(playCard, key2);
+        request.setAttribute("imageLocKey", imageExKey);
 
         request.setAttribute("rhymeWord", word);
+        imageEx = GamePlay.imageLocation(playCard, word);
+        request.setAttribute("imageLoc", imageEx);
 
         request.setAttribute("screenWord", word);
         thumb = "incorrect";
@@ -225,8 +266,12 @@ class GamePlayController {
         key3 = keyList.get(2);
 
         request.setAttribute("pressedDown", key3);
+        imageExKey = GamePlay.imageLocation(playCard, key3);
+        request.setAttribute("imageLocKey", imageExKey);
 
         request.setAttribute("rhymeWord", word);
+        imageEx = GamePlay.imageLocation(playCard, word);
+        request.setAttribute("imageLoc", imageEx);
 
         request.setAttribute("screenWord", word);
         thumb = "incorrect";
@@ -253,8 +298,12 @@ class GamePlayController {
         key4 = keyList.get(3);
 
         request.setAttribute("pressedRight", key4);
+        imageExKey = GamePlay.imageLocation(playCard, key4);
+        request.setAttribute("imageLocKey", imageExKey);
 
         request.setAttribute("rhymeWord", word);
+        imageEx = GamePlay.imageLocation(playCard, word);
+        request.setAttribute("imageLoc", imageEx);
 
         request.setAttribute("screenWord", word);
 
@@ -282,11 +331,25 @@ class GamePlayController {
 
         List preList = GamePlay.listWords(playCard);
 
+
+
+        // each key word corresponds to a key being pressed
         keyList = GamePlay.listKeys(playCard);
+
+        imageEx1 = GamePlay.imageLocation(playCard, keyList.get(0));
+        imageEx2 = GamePlay.imageLocation(playCard, keyList.get(1));
+        imageEx3 = GamePlay.imageLocation(playCard, keyList.get(2));
+        imageEx4 = GamePlay.imageLocation(playCard, keyList.get(3));
+
         request.setAttribute("rhymeWord1", keyList.get(0));
         request.setAttribute("rhymeWord2", keyList.get(1));
         request.setAttribute("rhymeWord3", keyList.get(2));
         request.setAttribute("rhymeWord4", keyList.get(3));
+
+        request.setAttribute("imageWord1", imageEx1);
+        request.setAttribute("imageWord2", imageEx2);
+        request.setAttribute("imageWord3", imageEx3);
+        request.setAttribute("imageWord4", imageEx4);
 
         wordList = [];
         for (int b=0;b<10;b++){

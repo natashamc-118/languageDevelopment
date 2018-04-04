@@ -75,12 +75,12 @@
 
       <!-- Unnamed (Image) -->
       <div id="u1058" class="ax_default image">
-        <asset:image id="u1058_img" class="center" src="${pressedDown}.jpg"/>
+        <asset:image id="u1058_img" class="center" src="${imageLocKey}"/>
       </div>
 
       <!-- Unnamed (Image) -->
       <div id="u1059" class="ax_default image">
-        <asset:image id="u1059_img" class="center" src="${rhymeWord}.jpg"/>
+        <asset:image id="u1059_img" class="center" src="${imageLoc}"/>
       </div>
 
       <!-- Unnamed (Image) -->

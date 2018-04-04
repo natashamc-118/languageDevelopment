@@ -1,7 +1,7 @@
 #
 CAT, CAT.jpg, CAT.wav
 HAT, HAT.jpg, HAT.wav
-BAT, BAT.jpg, BAT.wav
+BAT, BAT.png, BAT.wav
 RAT, RAT.jpg, RAT.wav
 MAT, MAT.jpg, MAT.wav
 #

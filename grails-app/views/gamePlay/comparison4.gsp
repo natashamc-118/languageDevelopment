@@ -74,13 +74,13 @@
       <!-- Unnamed (Image) -->
       <div id="u1049" class="ax_default image">
         <!--img id="u1049_img" class="img " src="images/instructions/u17.jpg"/-->
-        <asset:image id="u1049_img" class="center"  src="${pressedRight}.jpg"/>
+        <asset:image id="u1049_img" class="center"  src="${imageLocKey}"/>
       </div>
 
       <!-- Unnamed (Image) -->
       <div id="u1050" class="ax_default image">
         <!--img id="u1050_img" class="img " src="images/gamescreen/u27.jpg"/-->
-        <asset:image id="u1050_img" class="center"  src="${rhymeWord}.jpg"/>
+        <asset:image id="u1050_img" class="center"  src="${imageLoc}"/>
       </div>
 
       <!-- Unnamed (Image) -->

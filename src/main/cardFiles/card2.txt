@@ -4,12 +4,12 @@ CAR, CAR.jpg, CAR.wav
 JAR, JAR.jpg, JAR.wav
 GUITAR, GUITAR.jpg, GUITAR.wav
 #
-BOW, BOW.jpg, BOW.wav
+BOW, BOW.png, BOW.wav
 SNOW, SNOW.jpg, SNOW.wav
 TOE, TOE.jpg, TOE.wav
 CROW, CROW.jpg, CROW.wav
 #
-BEAR, BEAR.jpg, BEAR.wav
+BEAR, BEAR.png, BEAR.wav
 CHAIR, CHAIR.jpg, CHAIR.wav
 HAIR, HAIR.jpg, HAIR.wav
 PEAR, PEAR.jpg, PEAR.wav

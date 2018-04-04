@@ -93,22 +93,22 @@
 
     <!-- Unnamed (Image) -->
     <div id="u16" class="ax_default image">
-    <asset:image id="u16_img" class = "img"  src="${rhymeWord4}.jpg"/>
+    <asset:image id="u16_img" class = "img"  src="${imageWord4}"/>
     </div>
 
     <!-- Unnamed (Image) -->
     <div id="u17" class="ax_default image">
-    <asset:image id="u17_img" class = "img"  src="${rhymeWord3}.jpg"/>
+    <asset:image id="u17_img" class = "img"  src="${imageWord3}"/>
     </div>
 
     <!-- Unnamed (Image) -->
     <div id="u18" class="ax_default image">
-    <asset:image id="u18_img" class = "img"  src="${rhymeWord2}.jpg"/>
+    <asset:image id="u18_img" class = "img"  src="${imageWord2}"/>
     </div>
 
     <!-- Unnamed (Image) -->
     <div id="u19" class="ax_default image">
-    <asset:image id="u19_img" class = "img"  src="${rhymeWord1}.jpg"/>
+    <asset:image id="u19_img" class = "img"  src="${imageWord1}"/>
     </div>
 
     <!-- Unnamed (Ellipse) -->

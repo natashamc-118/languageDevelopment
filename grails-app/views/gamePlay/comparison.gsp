@@ -75,7 +75,7 @@
       <div id="u1040" class="ax_default image">
         <!--img id="u1040_img" class="img " src="images/instructions/u17.jpg"/-->
 
-        <asset:image id="u1040_img" class="center"  src="${pressedLeft}.jpg"/>
+        <asset:image id="u1040_img" class="center"  src="${imageLocKey}"/>
 
 
 
@@ -84,7 +84,7 @@
       <!-- Unnamed (Image) -->
       <div id="u1041" class="ax_default image">
         <!--img id="u1041_img" class="img " src="images/game_screen/u27.jpg"/-->
-        <asset:image id="u1041_img" class="center"  src="${rhymeWord}.jpg"/>
+        <asset:image id="u1041_img" class="center"  src="${imageLoc}"/>
       </div>
 
       <!-- Unnamed (Image) -->
