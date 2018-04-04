@@ -47,27 +47,33 @@
       </div>
 
       <!-- Unnamed (Rectangle) -->
+    <g:link action="instructions">
       <div id="u103" class="ax_default box_1">
         <div id="u103_div" class=""></div>
       </div>
+    </g:link>
 
       <!-- Unnamed (Rectangle) -->
+    <g:link action="instructions">
       <div id="u104" class="ax_default heading_1">
         <div id="u104_div" class=""></div>
         <div id="u104_text" class="text ">
           <p><center>PLAY</center></p>
         </div>
       </div>
+    </g:link>
 
       <!-- Unnamed (Ellipse) -->
+    <g:link controller="GameCard" action="index">
       <div id="u105" class="ax_default ellipse">
         <asset:image id="u105_img" class = "img" src="circle1.png"/>
         <div id="u105_text" class="text ">
           <p><span>i</span></p>
         </div>
       </div>
-    </div>
 
+    </g:link>
+    </div>
     <asset:javascript src="home.js"/>
 
   </body>

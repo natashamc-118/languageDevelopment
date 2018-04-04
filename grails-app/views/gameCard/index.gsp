@@ -86,7 +86,7 @@
         </div>
       </g:link>  
 
-      <g:link action="fileCreate">
+      <g:link controller="GamePlay" action="index">
         <div id="u110" class="ax_default link_button">
           <div id="u110_div" class=""></div>
           <div id="u110_text" class="text ">
